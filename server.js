@@ -661,7 +661,7 @@ client.on("guildMemberRemove", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `:loudspeaker: **@${
+        `<a:tik:627830420070727690> - :loudspeaker: **@${
           member.user.tag
         }** adlı şahsa aramızdan ayrıldı! ${rol} kişi olmamıza ${rol -
           member.guild.memberCount} kişi kaldı! :inbox_tray:`
