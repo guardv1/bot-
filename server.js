@@ -393,8 +393,8 @@ client.on("guildMemberRemove", async member => {
     const aa = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **adlı kullanıcı aramızdan ayrıldı.\nKullanıcıyı davet eden:** \`\`Bulunamadı!\`\``
-      )
+        `\`\`${member.user.tag}\`\` **adlı kullanıcı aramızdan ayrıldı.\nKullanıcıyı davet eden:** \`\`${davetçi.tag}!\`\``
+     )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
     return;
