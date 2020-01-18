@@ -26,9 +26,7 @@ module.exports.run = async (bot, message) => {
       true
     )
     .addField(`Bu Sunucu Premium Mu?`, pre, false)
-    .addField(`Destek Sunucusu`, `http://bit.ly/davetyöneticisidestek`, false)
-    .addField(`Botu Ekleyin`, `http://bit.ly/davetyöneticisiekle`, false)
-  .addField(`Bota Oy Verin`, `http://bit.ly/davetyöneticisioy`, false)
+    .addField(`Botu Ekleyin`, `https://discordapp.com/oauth2/authorize?client_id=668008251161444362&scope=bot&permissions=2146958847`, false)
     .setFooter(bot.user.username, bot.user.avatarURL);
   message.channel.send(embed);
 };

@@ -4,7 +4,7 @@ module.exports.run = async (client, message) => {
   
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
-    .addField(`Yapımcı(lar)`, `<@404206792005124096>`)
+    .addField(`Yapımcılar`, `<@608620174525988884>`)
 .setFooter(client.user.username, client.user.avatarURL)
 
   message.channel.send(embed);

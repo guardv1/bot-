@@ -1,18 +1,19 @@
-const chalk = require("chalk");
-const moment = require("moment");
-const Discord = require("discord.js");
-const ayarlar = require("../ayarlar.json");
+const Discord = require('discord.js');
+const Moment = require('moment');
+const client = new Discord.Client();
+module.exports = client => {
+const ayarlar = require('../ayarlar.json');
+
 var prefix = ayarlar.prefix;
 
-module.exports = async client => {
-  var oyun = ["Davet Community®", "Versiyon v0.2", "Rol Koruma Sistemi!"];
+  const aktiviteListesi = [
+   `Anomoly ${prefix}yardım 🔥 ${prefix}g-yardım 🔥 ${prefix}r-yardım 🔥 + Beta 0.0.1`
+  ]
 
-  setInterval(async () => {
-    var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
+  client.user.setStatus('online')
 
-    client.user.setActivity(oyun[random], { type: "WATCHING" });
-  }, 12000);
-  client.user.setStatus("online");
-
-  /*client.user.setActivity("a!yardım | a!davet | a!prefix ☣", { type: "WATCHING" });*/
-};
+  setInterval(() => {
+    const Aktivite = Math.floor(Math.random() * (aktiviteListesi.length - 1))
+    client.user.setActivity(aktiviteListesi[Aktivite])
+  }, 7000)
+}
