@@ -5,7 +5,7 @@ dependencies:
   cpu-stats: 1.0.0
   crypto: 1.0.1
   dblapi.js: 2.3.0
-  discord-anti-spam: 2.3.3
+  discord-anti-spam: 2.3.4
   discord.js: 11.5.1
   express: 4.17.1
   figlet: 1.2.4
@@ -738,12 +738,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
-  /discord-anti-spam/2.3.3:
+  /discord-anti-spam/2.3.4:
     dependencies:
       discord.js: 11.5.1
     dev: false
     resolution:
-      integrity: sha512-/sqOaRvNXYTM3UfaMc1R4ZWUPEEqV6MoDPDz8ahPUTajFlDaqMSH9M4MEFwB8zTiKK80rElMyR1m3BnSOY6Wiw==
+      integrity: sha512-Y9XAIfGegNoSbwpGIIp5p5nIVi9BygISv80N1i92A+URCeqIqCCAFmkOWp8hM8JbyiXDbeiAFT0Jqae+h9Zv9A==
   /discord.js/11.5.1:
     dependencies:
       long: 4.0.0
@@ -2029,7 +2029,7 @@ specifiers:
   cpu-stats: ^1.0.0
   crypto: ^1.0.1
   dblapi.js: ^2.3.0
-  discord-anti-spam: ^2.3.3
+  discord-anti-spam: ^2.3.4
   discord.js: ^11.5.1
   express: ^4.17.1
   figlet: ^1.2.4
