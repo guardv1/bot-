@@ -7,7 +7,7 @@ const ayarlar = require('../ayarlar.json');
 var prefix = ayarlar.prefix;
 
   const aktiviteListesi = [
-   `Anomoly ${prefix}yardım 🔥 ${prefix}g-yardım 🔥 ${prefix}r-yardım 🔥 + Beta 0.0.1`
+   `Anomoly ${prefix}yardım 🔥 ${prefix}davet 🔥 ${prefix}premium 🔥 + Beta 0.2`
   ]
 
   client.user.setStatus('online')
