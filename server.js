@@ -244,7 +244,7 @@ client.on("guildMemberAdd", async member => {
       const msj = new Discord.RichEmbed()
         .setColor("BLACK")
         .setDescription(
-          `<@${member.user.id}> sunucuya hoşgeldin!\nBu sunucu **<@${client.user.id}>** kullanıyor!\nKomutlarımı görmek için: !yardım\nEğer beni eklemek istersen: [[Tıkla!]](https://discordapp.com/oauth2/authorize?client_id=668008251161444362&scope=bot&permissions=2146958847)`
+          `<@${member.user.id}> sunucuya hoşgeldin!\nBu sunucu **<@${client.user.id}>** kullanıyor!\nKomutlarımı görmek için: a!yardım\nEğer beni eklemek istersen: [[Tıkla!]](https://discordapp.com/oauth2/authorize?client_id=668008251161444362&scope=bot&permissions=2146958847)`
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
@@ -488,7 +488,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `<a:tik:627830420070727690> - :loudspeaker: **@${member.user.tag}** adlı Kullanıcıya rolü verildi! :inbox_tray:`
+        `:loudspeaker: **@${member.user.tag}** adlı Kullanıcıya rolü verildi! :inbox_tray:`
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(embed);
@@ -544,7 +544,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `<a:tik:627830420070727690> - :loudspeaker: **@${
+        `:loudspeaker: **@${
           member.user.tag
         }** adlı şahsa aramıza katıldı! ${rol} kişi olmamıza ${rol -
           member.guild.memberCount} kişi kaldı! :inbox_tray:`
@@ -582,7 +582,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `<a:tik:627830420070727690> - :loudspeaker: **@${member.user.tag}** adlı şahsa tag verildi!`
+        `:loudspeaker: **@${member.user.tag}** adlı şahsa tag verildi!`
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(embed);
@@ -595,7 +595,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `<a:tik:627830420070727690> - :loudspeaker: **@${member.user.tag}** adlı şahsa tag verildi!`
+        `:loudspeaker: **@${member.user.tag}** adlı şahsa tag verildi!`
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(embed);
@@ -661,7 +661,7 @@ client.on("guildMemberRemove", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `<a:tik:627830420070727690> - :loudspeaker: **@${
+        `:loudspeaker: **@${
           member.user.tag
         }** adlı şahsa aramızdan ayrıldı! ${rol} kişi olmamıza ${rol -
           member.guild.memberCount} kişi kaldı! :inbox_tray:`
@@ -776,7 +776,13 @@ client.on("guildMemberRemove", async(member) => {
 
 
 
+////Fakegiriş
 
+client.on('message', async message => {
+    if (message.content === 'fakegiriş') {
+        client.emit('guildMemberAdd', message.member || await message.guild.fetchMember(message.author));
+    }
+});
 
 
 client.login(ayarlar.token);
