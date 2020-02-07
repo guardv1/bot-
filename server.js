@@ -229,7 +229,7 @@ client.on("message", async message => {
         .setColor("BLACK")
         .setTitle("Sa-As sistemi!")
         .setDescription(
-          "<a:krstl:645227930208829450> **Aleyküm Selam, Hoşgeldin!**"
+          " **Aleyküm Selam, Hoşgeldin!**"
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
@@ -546,7 +546,7 @@ client.on("guildMemberAdd", async member => {
       .setDescription(
         `:loudspeaker: **@${
           member.user.tag
-        }** adlı şahsa aramıza katıldı! ${rol} kişi olmamıza ${rol -
+        }** adlı kullanıcı aramıza katıldı! ${rol} kişi olmamıza ${rol -
           member.guild.memberCount} kişi kaldı! :inbox_tray:`
       )
       .setFooter(client.user.username, client.user.avatarURL);
@@ -582,7 +582,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `:loudspeaker: **@${member.user.tag}** adlı şahsa tag verildi!`
+        `:loudspeaker: **@${member.user.tag}** adlı kullanıcıya tag verildi!`
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(embed);
@@ -595,7 +595,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `:loudspeaker: **@${member.user.tag}** adlı şahsa tag verildi!`
+        `:loudspeaker: **@${member.user.tag}** adlı kullanıcıya tag verildi!`
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(embed);
@@ -661,9 +661,9 @@ client.on("guildMemberRemove", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `<a:tik:627830420070727690> - :loudspeaker: **@${
+        `:loudspeaker: **@${
           member.user.tag
-        }** adlı şahsa aramızdan ayrıldı! ${rol} kişi olmamıza ${rol -
+        }** adlı kullanıcı aramızdan ayrıldı! ${rol} kişi olmamıza ${rol -
           member.guild.memberCount} kişi kaldı! :inbox_tray:`
       )
       .setFooter(client.user.username, client.user.avatarURL);
