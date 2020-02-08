@@ -38,7 +38,7 @@ module.exports.conf = {
 };
 
 module.exports.help = {
-  name: "oto-tag-sıfırla",
+  name: "ototag-sıfırla",
   description: "Etiketlenen şahsa etiketlenen rolü alırsınız.",
   usage: "oto-tag"
 };
